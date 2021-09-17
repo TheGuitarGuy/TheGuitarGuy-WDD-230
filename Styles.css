@@ -1,0 +1,62 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(255, 251, 254);
+    font-size: 40px;
+    text-align: left;
+    margin-left: 100px;
+    position: relative;
+    bottom: 120px;
+
+  }
+  h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 251, 254);
+    font-size: 35px;
+  }
+.rectangle{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+.rectangle2{
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+}
+body{
+  background-color: rgb(1,4,0);
+}
+ul{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 251, 254);
+}
+#profile_picture{
+  float: right;
+  position: relative;
+  bottom: 250px;
+  border-radius: 20px;
+  margin-right: 10px;
+  perspective: 300px;
+}
+.line-1 {
+  height: 0.1px;
+  background: azure;
+  margin-right: 8px;
+}
+footer{
+  color: rgb(255, 251, 254);
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+#footer_paragraph{
+  position: relative;
+  top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#copyright_paragraph{
+  position: relative;
+  top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
