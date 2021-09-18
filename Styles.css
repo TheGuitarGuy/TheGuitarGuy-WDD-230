@@ -40,7 +40,7 @@ ul{
   perspective: 300px;
 }
 .line-1 {
-  height: 0.1px;
+  height: 0.5px;
   background: azure;
   margin-right: 8px;
 }
