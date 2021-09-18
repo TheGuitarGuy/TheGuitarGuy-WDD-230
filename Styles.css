@@ -13,6 +13,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 251, 254);
     font-size: 35px;
+    margin-left: 18px;
   }
 .rectangle{
     width: 100%;
@@ -59,4 +60,13 @@ footer{
   position: relative;
   top: 100px;
   font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+  color: rgb(28, 178, 245);
+}
+a:visited{
+  color: rgb(204, 146, 248)
+}
+a:hover{
+  color: rgb(245, 245, 245)
 }
