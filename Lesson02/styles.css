@@ -20,7 +20,6 @@ h2 {
   grid-column: span 1 / 3;
   grid-row: 1;
   text-align: center;
-  /* color: rgb(204, 164, 61); */
   color: #079bf5;
   font-size: 30px;
   font-family: Helvetica;
