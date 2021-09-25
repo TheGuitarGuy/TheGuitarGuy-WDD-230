@@ -74,63 +74,7 @@ p {
   grid-row: 3;
 }
 
-@media only screen and (max-width: 480px) {
-  body {
-    grid-template-columns: 1fr;
-  }
-  h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
-  }
-  #visual_hierarchy_head {
-    grid-row: 7;
-    grid-column: 1;
-    font-size: 15px;
-  }
-  h2 {
-    grid-column: 1;
-    grid-row: 1;
-    /* color: rgb(204, 164, 61); */
-    color: #079bf5;
-    font-size:15px;
-    font-family: Helvetica;
-    margin-bottom: 100px;
-    font-weight: 300;
-  }
-  #fitts_law_head {
-    grid-row: 4;
-    grid-column: 1;
-    font-size: 15px;
-  }
-  #white_space_head {
-    grid-row: 1;
-    grid-column: 1;
-    font-size: 15px;
-  }
-  #Squarespace {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  #Sanvello {
-    grid-row: 5;
-    grid-column: 1;
-  }
-  #apple {
-    grid-row: 8;
-    grid-column: 1;
-  }
-  #squarespace-paragraph {
-    grid-row: 3;
-  }
-  #sanvello-paragraph {
-    grid-row: 6;
-  }
-  #apple-paragraph {
-    text-align: center;
-    grid-row: 9;
-  }
-}
-@media only screen and (max-width: 768px) {
+@media (max-width:768px) and (min-width:400px){
     body {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -140,7 +84,7 @@ p {
       font-size: 25px;
     }
     #visual_hierarchy_head {
-      grid-row: 7;
+      grid-row: 2;
       grid-column: 1;
     }
     h2 {
@@ -148,12 +92,71 @@ p {
       grid-row: 1;
     }
     #fitts_law_head {
+      grid-row: 2;
+      grid-column: 2;
+    }
+    #white_space_head {
+      grid-row: 5;
+      grid-column: 1;
+    }
+    #Squarespace {
+      grid-row: 6;
+      grid-column: 1;
+    }
+    #Sanvello {
+      grid-row: 3;
+      grid-column: 2;
+    }
+  
+    #apple {
+      grid-row: 3;
+      grid-column: 1;
+    }
+    #squarespace-paragraph {
+      grid-row: 7;
+      grid-column: 1;
+    }
+    #sanvello-paragraph {
+      grid-row: 4;
+      grid-column: 2;
+    }
+    #apple-paragraph {
       grid-row: 4;
       grid-column: 1;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    body {
+      grid-template-columns: 1fr;
+    }
+    h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 15px;
+    }
+    #visual_hierarchy_head {
+      grid-row: 7;
+      grid-column: 1;
+      font-size: 15px;
+    }
+    h2 {
+      grid-column: 1;
+      grid-row: 1;
+      /* color: rgb(204, 164, 61); */
+      color: #079bf5;
+      font-size:15px;
+      font-family: Helvetica;
+      margin-bottom: 100px;
+      font-weight: 300;
+    }
+    #fitts_law_head {
+      grid-row: 4;
+      grid-column: 1;
+      font-size: 15px;
     }
     #white_space_head {
       grid-row: 1;
       grid-column: 1;
+      font-size: 15px;
     }
     #Squarespace {
       grid-row: 2;
@@ -163,7 +166,6 @@ p {
       grid-row: 5;
       grid-column: 1;
     }
-  
     #apple {
       grid-row: 8;
       grid-column: 1;
@@ -175,6 +177,7 @@ p {
       grid-row: 6;
     }
     #apple-paragraph {
+      text-align: center;
       grid-row: 9;
     }
   }
