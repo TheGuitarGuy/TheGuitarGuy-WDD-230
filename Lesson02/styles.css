@@ -2,6 +2,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: black;
+  justify-content: center;
 }
 h1 {
   font-family: 'Quicksand', sans-serif;
@@ -75,27 +76,20 @@ p {
 
 @media only screen and (max-width: 480px) {
   body {
-    display: grid;
     grid-template-columns: 1fr;
-    background-color: black;
   }
   h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
-    font-weight: 400;
-    color: aliceblue;
-    margin-top: 50px;
   }
   #visual_hierarchy_head {
     grid-row: 7;
     grid-column: 1;
-    text-align: center;
     font-size: 15px;
   }
   h2 {
     grid-column: 1;
     grid-row: 1;
-    text-align: center;
     /* color: rgb(204, 164, 61); */
     color: #079bf5;
     font-size:15px;
@@ -106,24 +100,12 @@ p {
   #fitts_law_head {
     grid-row: 4;
     grid-column: 1;
-    text-align: center;
     font-size: 15px;
   }
   #white_space_head {
     grid-row: 1;
     grid-column: 1;
-    text-align: center;
     font-size: 15px;
-  }
-  img {
-    width: 75%;
-    border-radius: 10px;
-    margin-top: 0;
-    transition: transform 0.5s;
-  }
-  img:hover {
-    transform: scale(1.02);
-    -webkit-filter: blur(1px);
   }
   #Squarespace {
     grid-row: 2;
@@ -133,22 +115,14 @@ p {
     grid-row: 5;
     grid-column: 1;
   }
-
   #apple {
     grid-row: 8;
     grid-column: 1;
   }
-  p {
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Quicksand', sans-serif;
-  }
   #squarespace-paragraph {
-    text-align: center;
     grid-row: 3;
   }
   #sanvello-paragraph {
-    text-align: center;
     grid-row: 6;
   }
   #apple-paragraph {
@@ -160,53 +134,26 @@ p {
     body {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      background-color: black;
     }
     h1 {
       font-family: 'Quicksand', sans-serif;
       font-size: 25px;
-      font-weight: 400;
-      color: aliceblue;
-      margin-top: 50px;
     }
     #visual_hierarchy_head {
       grid-row: 7;
       grid-column: 1;
-      text-align: center;
     }
     h2 {
       grid-column: 1;
       grid-row: 1;
-      text-align: center;
-      /* color: rgb(204, 164, 61); */
-      color: #079bf5;
-      font-size: 30px;
-      font-family: Helvetica;
-      margin-bottom: 100px;
-      font-weight: 300;
     }
     #fitts_law_head {
       grid-row: 4;
       grid-column: 1;
-      text-align: center;
     }
     #white_space_head {
       grid-row: 1;
       grid-column: 1;
-      text-align: center;
-    }
-    img {
-      width: 75%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 10px;
-      margin-top: 0;
-      transition: transform 0.5s;
-    }
-    img:hover {
-      transform: scale(1.02);
-      -webkit-filter: blur(1px);
     }
     #Squarespace {
       grid-row: 2;
@@ -221,23 +168,13 @@ p {
       grid-row: 8;
       grid-column: 1;
     }
-    p {
-      text-align: center;
-      color: aliceblue;
-      font-family: 'Quicksand', sans-serif;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
     #squarespace-paragraph {
-      text-align: center;
       grid-row: 3;
     }
     #sanvello-paragraph {
-      text-align: center;
       grid-row: 6;
     }
     #apple-paragraph {
-      text-align: center;
       grid-row: 9;
     }
   }
