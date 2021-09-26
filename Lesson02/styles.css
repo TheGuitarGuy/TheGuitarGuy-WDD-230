@@ -2,7 +2,7 @@ body{
     background-color: black;
     justify-content: center;
 }
-wrapper {
+#wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -132,7 +132,7 @@ p{
         justify-content: center;
     }
     
-    wrapper {
+    #wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr
     }
@@ -218,7 +218,7 @@ p{
         bottom: 225px;
       }
     
-    wrapper {
+    #wrapper {
       display: grid;
       grid-template-columns: 1fr;
     }
