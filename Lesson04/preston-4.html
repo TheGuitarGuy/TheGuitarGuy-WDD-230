@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="Lesson04/nothing.js"></script>
+    <title>Preston</title>
+</head>
+<body>
+    <div id = "title-box">
+        <img src="logo.png" alt="Magellan Weather Logo" id = "logo">
+        <h1 id = "title-text">
+            Magellan
+        </h1>
+
+        <h1 id = "title-text-thin">
+            Weather
+        </h1>
+    </div>
+    
+    <div id = "container">
+        <button id = "menu-icon" onclick="myFunction()">
+            &#9776
+        </button>
+        <nav>
+            <!-- <a id = "menu-icon">&#9776;</a> -->
+            <ul id = "navbar">
+                <li class="item"><a href="home.html">Home</a></li>
+                <li class="item"><a href="preston-4.html">Preston</a></li>
+                <li class="item"><a href="soda-springs.html">Soda Springs</a></li>
+                <li class="item"><a href="fish-haven.html">Fish Haven</a></li>
+                <li class="item"><a href="storm-center.html">Storm Center</a></li>
+                <li class="item"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div> 
+    <div id = "preston-box">
+        <div id = "contentbox">
+            Hero w/ weather summary
+        </div>
+        <div id = "forecast">
+            5 Day Forecast
+        </div>
+        <div id = "article">
+            Article
+        </div>
+        <div id = "contact">
+            Contact Information
+        </div>
+    </div>
+
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.style.display === "block"){
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</html>
