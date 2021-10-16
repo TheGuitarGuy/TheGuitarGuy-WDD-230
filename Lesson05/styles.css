@@ -5,11 +5,84 @@ body {
   font-size: 16px;
   background-color: #0C120C;
 }
+#preston-link a{
+  color: rgb(235, 94, 0);
+}
+#pancakes {
+  display: none;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: white;
+  color: #032d30;
+  margin: 0%;
+}
+#contact-paragraph{
+  text-align: center;
+}
+.social{
+  width: 3%;
+  display: inline;
+  min-width: 20px;
+}
+#map{
+  align-self: center;
+  min-width: 200px;
+  width: 20%;
+}
+#article-paragraph{
+  text-align: left;
+  color: aliceblue;
+  font-family: Quicksand;
+}
+#article-photo{
+  width: 30%;
+  float: right;
+  margin-left: 1em;
+  min-width: 300px;
+}
+#contact-header{
+  font-family: Quicksand;
+  font-weight: 600;
+  color: aliceblue;
+}
+#article-header{
+  font-family: Quicksand;
+  font-weight: 600;
+  color: aliceblue;
+}
+#five-day-forecast {
+  background-color: #0C120C;
+  text-align: center;
+}
+#fiveday-header{
+  color: aliceblue;
+  margin-left: 40px;
+}
+#fiveday-container {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 15px 30px;
+  color: white;
+  margin: auto;
+}
+.days{
+  font-size: 15px;
+}
+.icons{
+  width: 100px;
+}
 #slogan{
   color: white;
   margin-left: 20px;
   font-size: 15px;
 }
+#contentbox{
+display: block;
+text-align: center;
+position: relative;
+}
+
 #preston-box{
 display: flex;
 flex-direction: column;
@@ -17,10 +90,22 @@ color: black;
 width: 100%;
 height: auto;
 }
-#contentbox{
-  background-color: lightblue;
-  margin-top: 10px;
-  padding: 20px;
+.summary {
+  top: 0px;
+  position: absolute;
+  padding: 1em;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 20;
+  color: aliceblue;
+  background-color: rgba(237,28,145, 0.8);
+  border-radius: 0px 20px 20px 0px;
+}
+#preston-hero{
+  margin-right: 20px;
+  width: 100%;
+  height: auto;
+  
 }
 #forecast{
   background-color: lightblue;
@@ -28,18 +113,25 @@ height: auto;
   padding: 20px;
 }
 #article{
-  background-color: lightblue;
+  background-color: rgba(17, 173, 235, 0.972);
   margin-top: 10px;
   padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(255,255,145, 0.1);
+}
+#icon-images{
+  text-align: center;
 }
 #contact{
-  background-color: lightblue;
+  background-color: #e1341e;
   margin-top: 10px;
   padding: 20px;
+  border-radius: 20px;
 }
 ul{
   list-style-type: none;
-  background-color: #5c5b5f;
+  background-color: rgba(17, 173, 235, 0.972);
+  border-radius: 15px;
   display: flex;
   align-items: center;
 }
@@ -77,9 +169,22 @@ li a:hover {
     text-align: center;
     align-items: center;
   }
+  .icons{
+    width:50px;
+  }
   #menu-icon{
     display: none;
   }
+  .summary{
+    padding: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 10px;
+    top: 0px;
+
+  }
+
+  
 
   
   li a {
@@ -156,6 +261,15 @@ border-radius: 10px;
 @media only screen and (max-width: 450px) {
   #navbar{
     display: block;
+  }
+  .days{
+    font-size: 10px;
+  }
+  .summary{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    top: 0px;
   }
 
   #title-text{
