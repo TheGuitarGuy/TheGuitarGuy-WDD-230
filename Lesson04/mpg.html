@@ -1,0 +1,32 @@
+<!-- /* Input: Number of beginning odometer, ending odometer, gallons of gasoline used. 
+ * Processing:Convert the number of miles traveled to gallons used per mile.
+ * Output: Number of miles per gallon
+ */ -->
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Document</title>
+
+<h1>Milage</h1>
+
+<script>
+function milage() {
+    let initial_amount = parseFloat(document.getElementById('initial').value);
+    let ending_amount = parseFloat(document.getElementById('ending').value);
+    let gallons_used = parseFloat(document.getElementById('gallons').value);
+    let mpg = (initial_amount-ending_amount)/gallons_used;
+    let answer = Math.abs(mpg);
+    document.getElementById('output').innerHTML = "Your car's gas milage is " + answer + " mpg"
+}
+</script>
+</head>
+<body>                                         
+<input type="text" placeholder="Enter the initial odometer reading" id="initial">
+<input type="text" placeholder="Enter ending odometer reading" id="ending">
+<input type="text" placeholder="Enter number of gallons used." id="gallons">
+<button type="button" onclick="milage()">Convert</button>
+<div id="output"></div>                
+</body>       
+</html>
