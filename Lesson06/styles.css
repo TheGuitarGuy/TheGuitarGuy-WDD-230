@@ -4,6 +4,7 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   background-color: #0C120C;
+  overflow-x: hidden;
 }
 #preston-link a{
   color: rgb(102, 0, 235);
