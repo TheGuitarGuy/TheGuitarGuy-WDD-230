@@ -46,13 +46,11 @@ function getThatWindChill(){
 
     if(Number(realTemp) <50 && Number(windSpeed))
     {
-
       let x = 35.74 + 0.6215 * (Number(realTemp)) - 35.75 * Number(windSpeed) ** 0.16 + 0.4275 * Number(realTemp) * Number(windSpeed) ** 0.16;
       let windChill = Math.round(x, 2);
       // 35.74+0.6215𝑡−35.75𝑠0.16+0.4275𝑡𝑠0.16
       let viewerWindChill = "Feels like: " + windChill;
       document.write(viewerWindChill);
-
     }
     else{
       document.write("Feels like " + realTemp);
