@@ -1,60 +1,44 @@
 const images = document.querySelectorAll('[data-src]');
 
-const preloadImage = (img) => {
-    const src = img.getAttribute('data-src');
-    if (!src) {
-        return;
-    }
-    img.src = src;
+// Preload each image
+function preloadImage(img) {
+  const src = img.getAttribute('data-src');
+  img.removeAttribute('data-src');
+  if (!src) {
+    return;
+  }
+
+  img.src = src;
 }
 
 const imgOptions = {
-    threshod: 0,
-    rootMargin: '0px 0px -200px 0px',
+  threshold: 1,
+  rootMargin: '0px 0px 300px 0px',
 };
-const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-    entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.style.animation = 'bounce ease-in 500ms'
-            preloadImage(entry.target);
-            imgObserver.unobserve(entry.target);
-        }
-    })
-}, imgOptions);
 
-images.forEach((image) => {
-    imgObserver.observe(image)
-})
-
-const images = document.querySelectorAll('[data-src]');
-
-const preloadImage = (img) => {
-    const src = img.getAttribute('data-src');
-    if (!src) {
-        return;
+const imgObserver = new IntersectionObserver((images, imgObserver) => {
+  images.forEach((img) => {
+    if (!img.isIntersecting) {
+      return;
+    } else {
+      preloadImage(img.target);
+      imgObserver.unobserve(img.target);
     }
-    img.src = src;
-}
-
-const imgOptions = {
-    threshod: 0,
-    rootMargin: '0px 0px 2200px 0px',
-};
-
-const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-    entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.style.animation = 'bounce ease-in 500ms'
-            preloadImage(entry.target);
-            imgObserver.unobserve(entry.target);
-        }
-    })
+  });
 }, imgOptions);
 
+// observe each Image
 images.forEach((image) => {
-    imgObserver.observe(image)
-})
+  imgObserver.observe(image);
+});
+
+function myFunction() {
+    var x = document.getElementById("navbar");
+    var y = screen.width;
+    if (x.style.display === "block"){
+      x.style.display = 'none';
+    } else {
+      x.style.display = "block";
+    }
+}
+myFunction()
