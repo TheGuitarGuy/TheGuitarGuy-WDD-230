@@ -15,7 +15,6 @@ body {
   #menu-icon{
     display: none;
   }
-
   ul{
     list-style-type: none;
     background-color: rgba(17, 173, 235, 0.972);
@@ -62,7 +61,7 @@ body {
     align-items: center;
     justify-items: center;
     grid-column-gap: 100px;
-    grid-row-gap: 300px;
+    grid-row-gap: 200px;
   }
 
   #logo{
@@ -97,8 +96,7 @@ body {
   .gallery-paragraph{
       color: white;
   }
-  @media (max-width: 750px) {
-
+  @media only screen and (max-width: 750px) {
     ul{
         display: flex;
         justify-content: center;
@@ -118,7 +116,6 @@ body {
         padding-right: 50px;
         font-size: 10px;
         top: 0px;
-    
       }
     #gallery{
       display: grid;
@@ -128,8 +125,13 @@ body {
       grid-gap: 5px;
       grid-row-gap: 200px;
     }
-    li a{
+    li a {
         display: flex;
+        color: white;
+        padding: 14px 16px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
       }
       #menu-icon{
         display: none;
