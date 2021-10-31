@@ -88,7 +88,7 @@ body {
     font-size: 27px;
   }
   .gallery-images {
-    /* box-shadow: 10px 5px 5px rgba(154, 154, 154, 0.8); */
+    box-shadow: 5px 5px 0px 5px rgba(100, 100, 100, 0.1);
     border-radius: 20px;
     max-width: 100%;
     max-height: auto;
@@ -139,6 +139,7 @@ body {
     .gallery-images{
         max-width: 100%;
         max-height: auto;
+        box-shadow: none;
     }
     
     footer{
@@ -202,5 +203,8 @@ body {
       .container {
         background-color: #333;
         text-align: center;
+      }
+      .gallery-images{
+        box-shadow: none;
       }
   }
