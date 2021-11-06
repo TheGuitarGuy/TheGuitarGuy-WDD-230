@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Preston</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <aside id = "pancakes">
+        <h3>
+            Saturday = Preston Pancakes in the Park! <br>
+            9:00 a.m. Saturday at the city park pavilion.
+        </h3>
+    </aside>
+    <div id = "title-box">
+        <img src="logo.png" alt="Magellan Weather Logo" id = "logo">
+            <h1 id = "title-text">
+                Magellan
+            </h1>
+    
+            <h1 id = "title-text-thin">
+                Weather
+            </h1>
+    </div>
+    
+    <div id = "container">
+        <button id = "menu-icon" onclick="myFunction()">
+            &#9776
+        </button>
+        <nav>
+            <!-- <a id = "menu-icon">&#9776;</a> -->
+            <ul id = "navbar">
+                <li class="item" id = "home"><a href="home.html">Home</a></li>
+                <li class="item" id = "preston-link"><a href="preston-4.html">Preston</a></li>
+                <li class="item"><a href="Lesson06/soda-springs.html">Soda Springs</a></li>
+                <li class="item"><a href="fish-haven.html">Fish Haven</a></li>
+                <li class="item"><a href="storm-center.html">Storm Center</a></li>
+                <li class="item"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+    </div> 
+    <div class="form">
+        <h2>Contact Information</h2>
+        <form>
+            <label>
+                <input type="text" name="field1" placeholder="Full Name" minlength="5" pattern="regexp" required/>
+            </label>
+            <label>
+                <input type="email" name="field2" placeholder="example@gmail.com" />
+            </label>
+            <label>
+                <input type="tel" name="field3" placeholder="Phone Number" required/>
+            </label>
+            <label>
+                <input type="number" name="field4" placeholder="Zip Code" required />
+            </label>
+            <label>
+                <input type="date" name="field5" placeholder="Date" id = "date-field" />
+            </label>
+            <label>
+                <input type = "list" list = "storm-type" name="field6" placeholder="Storm Type" />
+            </label>
+            <label id = "storm-severity">
+                Storm severity:
+            </label>
+            <label>
+                <input type="range" name="field6" placeholder="Severity" min="0" max="10" id = "severity-bar"/>
+            </label>
+          <label>
+            <input type = "list" list = "place" name="field7" placeholder="Location" />
+          </label>
+          <p id = "danger-paragraph">
+              Are you in danger? (Select one)
+          </p>
+            <input type="radio" id="option1" name="yes-button" value="Yes">
+            <label for="html">Yes</label><br>
+            <input type="radio" id="option2" name="maybe-button" value="Maybe">
+            <label for="css">Maybe</label><br>
+            <input type="radio" id="option3" name="no-button" value="No">
+            <label for="javascript">No</label>
+          <p id = "additional-comments">
+              Additional Comments?
+          </p>
+          <textarea id = "comments">
+
+          </textarea>
+
+          <input type="submit" name = "submit-button" id = "su">
+          
+        </form>
+        <datalist id = "storm-type">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+        </datalist>
+
+        <datalist id = "place">
+            <option value="Preston">
+            <option value="Soda Springs">
+            <option value="Fish Haven">
+        </datalist>
+      </div>
+
+   
+    <footer>
+        <p id = "footer_paragraph">
+           © Magellan Weather |Attributions|Kennion Gubler| <a href=" https://www.byui.edu/online" id = "footer-link">BYUI Online Learning</a>
+        </p>
+        <p id = "copyright_paragraph">
+           <script>
+               dateFunction();
+           </script>
+        </p>
+        <svg class = "rectangle2">
+           <rect/>
+        </svg>
+     </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+         WebFont.load({
+        google: {
+          families: [
+             'Quicksand'
+          ]
+        }
+      });
+    
+    </script>
+
+</body>
+
+</html>
