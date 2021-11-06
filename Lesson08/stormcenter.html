@@ -29,7 +29,7 @@
     
     <div id = "container">
         <button id = "menu-icon" onclick="myFunction()">
-            &#9776
+            &#9776;
         </button>
         <nav>
             <!-- <a id = "menu-icon">&#9776;</a> -->
@@ -60,29 +60,29 @@
                 <input type="number" name="field4" placeholder="Zip Code" required />
             </label>
             <label>
-                <input type="date" name="field5" placeholder="Date" id = "date-field" />
+                <input type="date" name="field5" id = "date-field" />
             </label>
             <label>
-                <input type = "list" list = "storm-type" name="field6" placeholder="Storm Type" />
+                <input list = "storm-type" name="field6"/>
             </label>
             <label id = "storm-severity">
                 Storm severity:
             </label>
             <label>
-                <input type="range" name="field6" placeholder="Severity" min="0" max="10" id = "severity-bar"/>
+                <input type="range" name="field6" min="0" max="10" id = "severity-bar"/>
             </label>
           <label>
-            <input type = "list" list = "place" name="field7" placeholder="Location" />
+            <input list = "place" name="field7" />
           </label>
           <p id = "danger-paragraph">
               Are you in danger? (Select one)
           </p>
             <input type="radio" id="option1" name="yes-button" value="Yes">
-            <label for="html">Yes</label><br>
+            <label for="option1">Yes</label><br>
             <input type="radio" id="option2" name="maybe-button" value="Maybe">
-            <label for="css">Maybe</label><br>
+            <label for="option2">Maybe</label><br>
             <input type="radio" id="option3" name="no-button" value="No">
-            <label for="javascript">No</label>
+            <label for="option3">No</label>
           <p id = "additional-comments">
               Additional Comments?
           </p>
