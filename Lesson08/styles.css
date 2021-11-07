@@ -12,7 +12,7 @@ body {
   color: gray;
 }
 #email-input{
-  color: white;
+  color: gray;
 }
 #forms{
   display: flex;
@@ -51,6 +51,9 @@ body {
 	font-weight: 500;
 	padding: 20px;
 	margin: -30px -30px 30px -30px;
+}
+input{
+  color: gray;
 }
 .form input[type="text"],
 .form input[type="date"],
