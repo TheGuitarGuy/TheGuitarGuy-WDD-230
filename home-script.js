@@ -19,11 +19,15 @@ fetch(requestURL)
         a_h3.textContent = 'Population: ' + towns[i].currentPopulation;
         let b_h3 = document.createElement('h3');
         b_h3.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+        let c_h3 = document.createElement('h3');
+        c_h3.textContent = towns[i].motto;
         let image = document.createElement('img');
         image.setAttribute('src', "image.jpeg");
         card.appendChild(h2);
         card.appendChild(h3);
         card.appendChild(a_h3);
+        card.appendChild(b_h3);
+        card.appendChild(c_h3);
         card.appendChild(image);
         document.querySelector('div.cards').appendChild(card);
       }

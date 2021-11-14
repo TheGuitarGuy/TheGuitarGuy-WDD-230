@@ -1,19 +1,7 @@
 
 * {padding: .35rem;}
 h2 {text-align:center;}
-
-
-article {
-  display: flex;
-	flex-direction: row;
-}
-
-article:nth-child(odd) {
-	flex-direction: row-reverse;
-}
-
 img { width: 100%; height: auto;}
-.data {background-color:#000; color:#fff;}
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 body {
@@ -335,8 +323,8 @@ border-radius: 10px;
 section{
   margin: 20px;
   background-color: burlywood;
-  border-radius: 10px;
-  height: 67%;
+  border-radius: 20px;
+
 }
 footer{
   text-align: center;
@@ -349,7 +337,7 @@ body{
 
 @media only screen and (max-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width: 400px) {
