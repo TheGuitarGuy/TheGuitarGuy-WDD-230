@@ -77,12 +77,11 @@ const updateNextFiveDays = () =>{
   fetchFiveDayWeatherData()
   const now = new Date();
   let day = now.getDay();
-  let days = ['Sun','Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat']
-  let container = document.getElementById('first_row')
-  for (let i = day; i < day + 5; i++){
-    let td = document.createElement('td')
-    td.innerHTML = days[i%7]
-    container.appendChild(td)
+  let days = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  let container = document.getElementsByClassName('days')
+  let dayIndex = document.getElementById("first-day")
+  for (let i = day; i < 5; i++){
+    console.log(days[i])
   }
 
 }
