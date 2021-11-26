@@ -4,9 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="sodasprings.css">
+    <title>Soda Springs</title>
+    <script src="sodasprings.js"></script>
 </head>
 <body>
+
+    <aside id = "pancakes">
+        <h3>
+            Saturday = Preston Pancakes in the Park! <br>
+            9:00 a.m. Saturday at the city park pavilion.
+        </h3>
+    </aside>
+    <div id = "title-box">
+        <img src="logo.png" alt="Magellan Weather Logo" id = "logo">
+            <h1 id = "title-text">
+                Magellan
+            </h1>
     
+            <h1 id = "title-text-thin">
+                Weather
+            </h1>
+    </div>
+    
+    <div id = "container">
+        <button id = "menu-icon" onclick="myFunction()">
+            &#9776
+        </button>
+        <nav>
+            <!-- <a id = "menu-icon">&#9776;</a> -->
+            <ul id = "navbar">
+                <li class="item" id = "home"><a href="home.html">Home</a></li>
+                <li class="item" id = "preston-link"><a href="preston-10.html">Preston</a></li>
+                <li class="item" id = "soda-spings-link"><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="item" id = "fish-haven-link"><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="item" id = "storm-center-link"><a href="stormcenter.html">Storm Center</a></li>
+                <li class="item" id = "gallery-7-link"><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div> 
+    <div id = "preston-box">
+        <div id = "contentbox">
+            <picture>
+                <source srcset="preston-hero-large.jpeg" media="(min-width: 1200px)" />
+                <source srcset="preston-hero-medium.jpeg" media="(min-width: 400px)" />
+                <img src="preston-hero-small.jpeg" id = "preston-hero"/>
+
+                <!-- <img src="preston-hero-small.jpeg" 
+                srcset="preston-hero-small.jpeg 400w, 
+                preston-hero-medium.jpeg 500w,
+                preston-hero-large.jpeg 2000w" alt="Preston Idaho Landscape" id = "preston-hero"> -->
+            </picture>
+            
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>Sky: <span id = "weather-type"> </span></p>
+                <p>
+                    Regular Temperature: <span id = "regular-ol-temp"> </span>&#176; F
+                </p>
+                <p>
+                    Wind Speed: <span id = wind-speed> </span>
+                </p>
+                <p>
+                    Feels Like:
+                    <span id = "windy-chilly"> </span>&#176; F
+                </p>
+                <p >Humidity: <span id = "dat-water-in-the-air-broh"> </span></p>
+            </div>
+        </div>
+        <h2 id = "fiveday-header">Five Day Forcast</h2>
+        <div id="five-day-forecast">
+            <table id = "fiveday-container">
+                <tr class="days">
+                    <th id = "first-day"></th>
+                    <th id = "second-day"></th>
+                    <th id = "third-day"></th>
+                    <th id = "fourth-day"></th>
+                    <th id = "fifth-day"></th>
+                </tr>
+                <tr id = "icons-for-forecast">
+                </tr>
+
+            </table>
+        </div>
+        <div id = "article">
+            <img src="article.jpeg" alt="Woman in Preston Idaho" id = "article-photo">
+            <h1 id = "article-header">
+                Article
+            </h1>
+            <p id = "article-paragraph">
+                Famous for the scenes of Napoleon Dynamite, Preston Idaho is surely a great place to visit!
+                 ipsum dolor sit. Cras tincidunt lobortis feugiat vivamus. Proin fermentum leo vel orci porta non pulvinar
+                  neque. Orci a scelerisque purus semper eget duis at tellus. Risus nullam eget felis eget nunc lobortis mattis
+                   aliquam faucibus. Maecenas volutpat blandit aliquam etiam erat velit. Et netus et malesuada fames ac turpis 
+                   egestas maecenas. Nunc lobortis mattis aliquam faucibus purus in massa. Ultrices vitae auctor eu augue ut lectus 
+                   arcu bibendum. Vel turpis nunc eget lorem dolor sed viverra ipsum. Vitae congue eu consequat ac felis. Urna et pharetra 
+                   pharetra massa. Morbi tristique senectus et netus. Tellus id interdum velit laoreet id. Cursus turpis massa tincidunt 
+                   dui ut ornare. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.Lorem ipsum 
+                   dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Ultricies lacus sed turpis tincidunt id. 
+                   Sed risus pretium quam vulputate. Et tortor consequat id porta nibh venenatis. Laoreet id donec ultrices tincidunt 
+                   arcu non sodales neque sodales. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Nulla pharetra 
+                   diam sit amet nisl suscipit adipiscing bibendum. Sit amet venenatis urna cursus eget nunc scelerisque. Mi in nulla 
+                   posuere sollicitudin. Neque vitae tempus quam pellentesque nec. Dictum at tempor commodo ullamcorper a. 
+                   Odio aenean sed adipiscing diam donec adipiscing tristique risus.
+                   Ut sem nulla pharetra diam sit amet. Ipsum consequat nisl vel pretium lectus quam id leo. Eget nunc 
+                   scelerisque viverra mauris in aliquam sem. Luctus accumsan tortor posuere ac. Eu augue ut lectus arcu. 
+                   Vel eros donec ac odio tempor orci dapibus ultrices in. Scelerisque in dictum non consectetur a erat nam at 
+                   lectus. Vitae justo eget magna fermentum iaculis. Dui id ornare arcu odio ut sem. Aliquam vestibulum morbi 
+                   blandit cursus risus at ultrices. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est.
+                    Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Phasellus faucibus scelerisque eleifend donec. 
+            </p>
+        </div>
+        <div id = "contact">
+            <h1 id = "contact-header">
+                Contact Information
+            </h1>
+            <p id = "contact-paragraph">
+                243 Rexburg Idaho<br>
+                magellanweather@magellan.com<br>
+                208-345-1745<br>
+                Follow us at<br>
+            </p>
+                <div id = "icon-images">
+                    <img src="facebook.png" alt="facebook icon" class="social">
+                    <img src="twitter.png" alt="twitter icon" class = "social">
+                    <img src="instagram.png" alt="instagram icon" class = "social">
+                    <div id = "map-container">
+                        <img src="map.png" alt="map of preston" id = "map">
+                    </div>
+                </div>
+                
+                
+
+        </div>
+    </div>
+    <footer>
+        <p id = "footer_paragraph">
+           © Magellan Weather |Attributions|Kennion Gubler| <a href=" https://www.byui.edu/online" id = "footer-link">BYUI Online Learning</a>
+        </p>
+        <p id = "copyright_paragraph">
+           <script>
+               dateFunction();
+           </script>
+        </p>
+        <svg class = "rectangle2">
+           <rect/>
+        </svg>
+     </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+         WebFont.load({
+        google: {
+          families: [
+             'Quicksand'
+          ]
+        }
+      });
+    
+    </script>
+
 </body>
+
 </html>

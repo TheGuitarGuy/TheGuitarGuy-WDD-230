@@ -4,6 +4,10 @@
     font-family: Quicksand;
     margin-left: 20px;
 }
+#gallery-7-link a
+{
+  color: rgb(102, 0, 235);
+}
 body {
     font-family: sans-serif;
     font-size: 16px;

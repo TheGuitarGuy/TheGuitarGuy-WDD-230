@@ -136,5 +136,3 @@ function getThatWindChill(){
         return null;
     }
 }
-
-

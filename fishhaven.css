@@ -5,21 +5,9 @@ body {
   background-color: #0C120C;
   overflow-x: hidden;
 }
-#preston-link a{
+#fish-haven-link a{
   color: rgb(102, 0, 235);
 }
-#date-field{
-  color: gray;
-}
-#email-input{
-  color: gray;
-}
-#forms{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
 #pancakes {
   display: none;
   padding: 1em;
@@ -29,83 +17,8 @@ body {
   color: #032d30;
   margin: 0%;
 }
-#storm-severity{
-  color: gray;
-  margin-right: 40px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700;
-}
-
-.form{
-	font-family: 'Open Sans Condensed', sans-serif;
-	width: 75%;
-	padding: 30px;
-	margin: 50px auto;
-  font-weight: 700;
-}
-.form h2{
-  color: aliceblue;
-	text-transform: uppercase;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 18px;
-	font-weight: 500;
-	padding: 20px;
-	margin: -30px -30px 30px -30px;
-}
-input{
-  color: gray;
-}
-.form input[type="text"],
-.form input[type="date"],
-.form input[type="datetime"],
-.form input[type="email"],
-.form input[type="number"],
-.form input[type="tel"],
-.form input[type="list"],
-.form input[type="url"],
-.form input[type="password"],
-.form textarea,
-.form select 
-{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	outline: none;
-	display: block;
-	width: 100%;
-	padding: 7px;
-	border: none;
-	border-bottom: 1px solid #ddd;
-	background: transparent;
-	margin-bottom: 10px;
-	font: 16px Arial, Helvetica, sans-serif;
-	height: 45px;
-}
-#additional-comments{
-  color: gray;
-  font: 16px Arial, Helvetica, sans-serif;
-}
-#submit-that-thing{
-  border-radius: 20px;
-  width: 100px;
-  height: 40px;
-  background: linear-gradient(90deg, rgba(255,0,243,1) 0%, rgba(237,0,255,1) 11%, rgba(0,212,255,1) 94%);
-  border: none;
-}
-#comments{
-  color: gray;
-  font: 16px Arial, Helvetica, sans-serif;
-}
 #contact-paragraph{
   text-align: center;
-}
-label{
-  color: gray;
-  font: 16px Arial, Helvetica, sans-serif;
-}
-#danger-paragraph{
-  color: gray;
-  font: 16px Arial, Helvetica, sans-serif;
 }
 .social{
   width: 3%;
