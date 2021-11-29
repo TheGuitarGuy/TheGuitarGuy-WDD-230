@@ -189,7 +189,7 @@ li a:hover {
   
 
   
-  li a {
+  #navbar {
     display: flex;
     color: white;
     padding: 14px 16px;
@@ -264,6 +264,7 @@ border-radius: 10px;
   padding-left: 7px;
   font-size: 27px;
 }
+
 
 @media only screen and (max-width: 450px) {
   #navbar{

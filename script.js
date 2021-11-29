@@ -13,7 +13,6 @@ function myFunction() {
       x.style.display = "block";
     }
 }
-myFunction()
 
   d = new Date();
   var x = d.getDay();

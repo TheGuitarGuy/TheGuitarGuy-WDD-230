@@ -4,8 +4,8 @@
 //   var x = "6";
 //   document.write(x);
 // }
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=db67ecb021c63ee0680227a7e0dd61d9"
-const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?q=Blackfoot,ID,USA&appid=db67ecb021c63ee0680227a7e0dd61d9"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=db67ecb021c63ee0680227a7e0dd61d9"
+const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?q=Preston,ID,USA&appid=db67ecb021c63ee0680227a7e0dd61d9"
 fetch(apiURL)
 .then((response) => response.json())
 .then((jsObject) => 
@@ -37,7 +37,7 @@ function myFunction() {
   }
 }
 const fetchFiveDayWeatherData = async () => {
-  const forecastResponse = await fetch("https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=db67ecb021c63ee0680227a7e0dd61d9&units=imperial")
+  const forecastResponse = await fetch("https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=db67ecb021c63ee0680227a7e0dd61d9&units=imperial")
   const data = await forecastResponse.json()    
   let temps = parseData(data.list);
   fillInFiveDayWeatherData(temps)
