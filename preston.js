@@ -12,9 +12,9 @@ fetch(apiURL)
 {
     document.getElementById("weather-type").textContent = jsObject.weather[0].description;
     document.getElementById("regular-ol-temp").textContent = Math.round(jsObject.main.temp);
-    document.getElementById("wind-speed").textContent = jsObject.wind.speed;
+    document.getElementById("wind-speed").textContent = jsObject.wind.speed + " mph";
     document.getElementById("windy-chilly").textContent = getThatWindChill();
-    document.getElementById("dat-water-in-the-air-broh").textContent = jsObject.main.humidity;
+    document.getElementById("dat-water-in-the-air-broh").textContent = jsObject.main.humidity +"%";
     iconList = []
     tempList = []
 })
@@ -28,6 +28,7 @@ fetch(apiURL)
 //   // document.getElementById("day-one").textContent = forecastjsObject.
 // })
 function myFunction() {
+console.log("button clicked")
   var x = document.getElementById("navbar");
   var y = screen.width;
   if (x.style.display === "block"){
@@ -96,15 +97,6 @@ const updateNextFiveDays = () =>{
 }
 
 updateNextFiveDays()
-function myFunction() {
-    var x = document.getElementById("navbar");
-    var y = screen.width;
-    // if (x.style.display =="block"){
-    //   x.style.display = 'none';
-    // } else {
-      // x.style.display = "block";
-}
-myFunction()
 
   d = new Date();
   var x = d.getDay();
@@ -142,6 +134,6 @@ function getThatWindChill(){
       return windChill;
     }
     else{
-        return null;
+        return realTemp;
     }
 }
