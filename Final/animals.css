@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #FFFDFA;
+  overflow-x: hidden;
+}
+#navbar
+{
+  background-color: #FFFDFA;
+}
+.cool-buttons
+{
+  width: 33.333333%;
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+#gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-column-gap: 100px;
+  grid-row-gap: 200px;
+}
+.gallery-images {
+  box-shadow: 5px 5px 0px 5px rgba(100, 100, 100, 0.1);
+  border-radius: 20px;
+  max-width: 100%;
+  max-height: auto;
+}
+#calendar
+{
+  background-image: url("forest.jpg");
+  /* background-color: rgba(100,0,200,0.5); */
+}
+#meet
+{
+  background-image: url("tiger-stripes.jpg");
+}
+#reservations
+{
+  background-image: url("zebra.jpg");
+}
+.twitter-timeline
+{
+  margin: auto;
+}
+#button-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+li a {
+  display: flex;
+  position: relative;
+  color: black;
+  text-align: center;
+  margin-left: 60px;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: auto;
+  margin-left: 8em;
+}
+
+li a:hover {
+  color: #FAAD22;
+}
+#logo{
+  height: auto;
+  width: auto;
+  padding-left: 10px;
+  max-height: 72px;
+  max-width: 250px;
+}
+#logo:hover{
+  opacity: 0.8;
+}
+#zoo-hero
+{
+  width: 100%;
+  height: auto;
+}
+.banner {
+  padding: 15px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 15px;
+  margin: 0px;
+}
+#learn
+{
+  padding: 15px;
+  background-color: red;
+  border-width: .05px;
+  border-color: #FAAD22;
+  color: white;
+  border-radius: 10px;
+  
+}
+
+@media only screen and (max-width: 750px) {
+  ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .icons{
+    width:50px;
+  }
+  #menu-icon{
+    display: none;
+  }
+  .summary{
+    padding: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 10px;
+    top: 0px;
+
+  }
+  
+  li a {
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+@media only screen and (min-width: 650px) {
+  
+  li a{
+    display: flex;
+  }
+  #menu-icon{
+    display: none;
+  }
+}
+
+footer{
+  color: rgb(255, 251, 254);
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+#footer_paragraph{
+  position: relative;
+  top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#copyright_paragraph{
+  position: relative;
+  top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+rect{
+  width: 100%;
+  height: 200px;
+  fill: #5c5b5f;
+}
+.rectangle{
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+}
+.rectangle2{
+width: 100%;
+max-width: 1200px;
+height: 100px;
+border-radius: 10px;
+}
+
+#footer-link{
+  color: white;
+}
+#footer-link:hover{
+  color:#16F3E8;
+}
+#title-box{
+  display: inline-flex;
+}
+#title-text{
+  color: azure;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 27px;
+}
+#title-text-thin{
+  color: #C11F77;
+  font-weight: 100;
+  padding-left: 7px;
+  font-size: 27px;
+}
+
+@media only screen and (max-width: 450px) {
+  #navbar{
+    display: block;
+  }
+  .days{
+    font-size: 10px;
+  }
+  .summary{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    top: 0px;
+  }
+
+  #title-text{
+    color: azure;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  #title-text-thin{
+    color: #C11F77;
+    font-weight: 100;
+    padding-left: 7px;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  /* Style the navigation menu */
+.container {
+  background-color: #333;
+  text-align: center;
+}
+
+
+/* Style the hamburger menu */
+#navbar{
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#menu-icon{
+  color: aliceblue;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  
+}
+
+}
