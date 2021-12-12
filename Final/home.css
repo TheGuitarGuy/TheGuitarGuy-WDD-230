@@ -27,6 +27,10 @@ body {
   color: white;
   border: none;
 }
+.cool-buttons:hover
+{
+  opacity: 90%;
+}
 #interactive-content
 {
   display: inline-flex;

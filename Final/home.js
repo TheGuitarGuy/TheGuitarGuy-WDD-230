@@ -24,13 +24,10 @@ async function getQuestion()
   document.querySelector("#question").innerHTML = `True or False: ${data.results[0].question}`
   document.querySelector("#answer").innerHTML = `Answer: ${data.results[0].correct_answer}`
 }
-function useData()
-{
-}
 function myFunction() {
+  var x = document.getElementById("navbar");
+  var y = screen.width;
   console.log("button clicked")
-    var x = document.getElementById("navbar");
-    var y = screen.width;
     if (x.style.display === "flex"){
       x.style.display = 'none';
     } 
